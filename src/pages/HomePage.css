@@ -36,11 +36,9 @@
 }
 
 .games-title {
-  max-width: 1300px;
-  margin: 70px auto 30px auto;
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
-  text-align: left;
   color: #e07afaa4;
 }
 
@@ -51,4 +49,41 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
   row-gap: 40px;
+}
+
+.games-header {
+  max-width: 1300px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level-section {
+  max-width: 1300px;
+  margin: 70px auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level-box {
+  display: inline-block;
+  padding: 15px 35px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  background: #e07afaa4;
+  font-size: 28px;
+  font-weight: 700;
+  box-shadow: 0 10px 8px rgba(224, 122, 250, 0.436);
+}
+
+.reset-button {
+  border: none;
+  background: #5f56561a;
+  color: #e07afaa4;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 15px;
 }

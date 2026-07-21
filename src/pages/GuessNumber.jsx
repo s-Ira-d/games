@@ -11,6 +11,10 @@ function GuessNumber() {
   const checkNumber = () => {
     if (+guess === number) {
       setMessage("Correct!");
+
+      const currentLevel = Number(localStorage.getItem("level")) || 0;
+
+      localStorage.setItem("level", currentLevel + 2);
     } else {
       setMessage("Try again!");
     }

@@ -1,7 +1,21 @@
+import { useEffect, useState } from "react";
 import GameCard from "../components/GameCard";
 import "./HomePage.css";
 
 function HomePage() {
+  const [level, setLevel] = useState(0);
+
+  useEffect(() => {
+    const savedLevel = Number(localStorage.getItem("level")) || 0;
+
+    setLevel(savedLevel);
+  }, []);
+
+  const resetProgress = () => {
+    localStorage.setItem("level", 0);
+    setLevel(0);
+  };
+
   return (
     <div className="home-page">
       <p className="logo-text">Brain Training Games</p>
@@ -15,7 +29,15 @@ function HomePage() {
         reaction time, memory, math, and problem-solving.
       </p>
 
-      <h2 className="games-title">Choose Your Game</h2>
+      <div className="level-box"> Level {level}</div>
+
+      <div className="games-header">
+        <h2 className="games-title">Choose Your Game</h2>
+
+        <button className="reset-button" onClick={resetProgress}>
+          Reset Progress
+        </button>
+      </div>
 
       <div className="games-grid">
         <GameCard

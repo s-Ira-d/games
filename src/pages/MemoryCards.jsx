@@ -72,6 +72,13 @@ function MemoryCards() {
   };
 
   const isFinished = cards.length > 0 && cards.every((card) => card.matched);
+  useEffect(() => {
+    if (isFinished) {
+      const currentLevel = Number(localStorage.getItem("level")) || 0;
+
+      localStorage.setItem("level", currentLevel + 3);
+    }
+  }, [isFinished]);
 
   return (
     <div className="memory-page">

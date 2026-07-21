@@ -18,6 +18,10 @@ function RockPaperScissors() {
       (playerChoice === "paper" && computerChoice === "rock")
     ) {
       setResult(` You won! You: ${playerChoice} | Computer: ${computerChoice}`);
+
+      const currentLevel = Number(localStorage.getItem("level")) || 0;
+
+      localStorage.setItem("level", currentLevel + 3);
     } else {
       setResult(
         `Computer won! You: ${playerChoice} | Computer: ${computerChoice}`,
