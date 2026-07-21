@@ -1,0 +1,81 @@
+.memory-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffeddc;
+}
+
+.memory-card {
+  width: 700px;
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.memory-description {
+  color: #666;
+}
+
+.moves {
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.memory-tile {
+  height: 110px;
+  background: #ffeddc;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.memory-tile.flipped {
+  background: #fff0f5;
+}
+
+.win-message {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffeddc;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #ffeddc;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.memory-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.back-link6 {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #fecea0;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

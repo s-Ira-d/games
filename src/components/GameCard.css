@@ -31,6 +31,10 @@
   background: #e7dcff;
 }
 
+.game-card-link:nth-child(6) .game-card {
+  background: #ffeddc;
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;

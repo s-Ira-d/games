@@ -6,6 +6,7 @@ import RockPaperScissors from "./pages/RockPaperScissors";
 import DiceGame from "./pages/DiceGame";
 import CoinGame from "./pages/CoinGame";
 import ColorGame from "./pages/ColorGame";
+import MemoryCards from "./pages/MemoryCards";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/dice" element={<DiceGame />} />
       <Route path="/coin" element={<CoinGame />} />
       <Route path="/color" element={<ColorGame />} />
+      <Route path="/memory" element={<MemoryCards />} />
     </Routes>
   );
 }

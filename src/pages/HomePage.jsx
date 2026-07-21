@@ -52,6 +52,13 @@ function HomePage() {
           difficulty="Medium"
           path="/color"
         />
+
+        <GameCard
+          title="Memory Cards"
+          description="Test your memory by finding matching pairs."
+          difficulty="Difficult"
+          path="/memory"
+        />
       </div>
     </div>
   );
