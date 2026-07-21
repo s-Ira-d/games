@@ -1,0 +1,65 @@
+.game-card-link {
+  text-decoration: none;
+}
+
+.game-card {
+  height: 180px;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.game-card-link:nth-child(1) .game-card {
+  background: #ffd6d6;
+}
+
+.game-card-link:nth-child(2) .game-card {
+  background: #d6eaff;
+}
+
+.game-card-link:nth-child(3) .game-card {
+  background: #fff0c2;
+}
+
+.game-card-link:nth-child(4) .game-card {
+  background: #d9f7d9;
+}
+
+.game-card-link:nth-child(5) .game-card {
+  background: #e7dcff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #222;
+}
+
+.difficulty {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.card-description {
+  margin-top: 15px;
+  color: #444;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.difficulty {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
