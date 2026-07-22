@@ -79,3 +79,39 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.level-button {
+  border: none;
+  border-radius: 16px;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.unlocked {
+  background: #fecea0;
+  cursor: pointer;
+}
+
+.locked {
+  background: #ffeddc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.back-to-levels {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #fecea0;
+  font-weight: 600;
+}
